@@ -1,0 +1,406 @@
+ASSIGNMENT 1
+
+*CALCULATOR#include <iostream>
+using namespace std;
+class calculator
+{
+int num1,num2,result;
+public:
+void add()
+{
+cout<<"enter first number";
+cin>>num1;
+cout<<"enter second number";
+cin>>num2;
+result=num1+num2;
+cout<<"the result is:"<<result;
+}
+void sub()
+{
+cout<<"enter first number";
+cin>>num1;
+cout<<"enter second number";
+cin>>num2;
+result=num1-num2;
+cout<<"the result is:"<<result;
+}
+void mul()
+{
+cout<<"enter the first number";
+cin>>num1;
+
+cout<<"enter the second number";
+cin>>num2;
+result=num1*num2;
+cout<<"the result is:"<<result;
+}
+void div()
+{
+cout<<"enter the first number";
+cin>>num1;
+cout<<"enter the second number";
+cin>>num2;
+result=num1%num2;
+cout<<"the result is:"<<result;}
+};
+int main()
+{
+calculator c1;
+c1.add();
+c1.sub();
+c1.mul();
+c1.div();}
+=================================================================================
+1ans)NAME ON THE SCREEN
+#include <iostream>
+using namespace std;
+class Name
+{
+   public:
+       char name;
+       void display()
+       {
+
+           cout<<"enter your name";
+           cin>>name;
+           cout<<"your name is :"<<name;
+
+       }
+};
+int main()
+         {
+           Name obj;
+           obj.display();
+
+         }
+=====================================================================================
+2ans)FRIENDS NAME ON THE SCREEN#include<iostream>
+using namespace std;
+class Friends
+{
+public:
+ char name1[],name2[],name3[],name4;
+     void getdata()
+{
+cout<<"enter friends name:"<<endl;
+cin>>name1 ;
+cout<<"enter friends name:"<<endl;
+cin>>name2;
+cout<<"enter friends name:"<<endl;
+cin>>name3;
+cout<<"enter friends name:"<<endl;
+cin>>name4;
+}
+
+void display()
+{
+
+    cout<<"******************************"<<endl;
+    cout<<"your friends name are:"<<endl;
+    cout<<name1<<endl;
+    cout<<name2<<endl;
+    cout<<name3<<endl;
+    cout<<name4<<endl;
+}
+
+};
+int main()
+{
+Friends n1;
+n1.getdata();
+n1.display();
+}
+================================================================================================
+3ans)PRINT AN INTEGER
+#include<iostream>
+using namespace std;
+class print
+{
+int n1;
+public: void num()
+{
+cout<<"enter the integer:\n";
+cin>>n1;
+cout<<"the integer is:\n"<<n1;
+
+}
+};
+int main()
+{
+print no;
+no.num();
+}
+===================================================================================================
+4ans)DECLARE VARIABLE OF EACH DATA TYPE AND PRINT THEIR VALUES
+#include<iostream>
+using namespace std;
+class Data
+{
+int i1;
+char c2;
+float f3;
+public:
+     void display()
+{
+cout<<"enter the integer number";
+cin>>i1;
+cout<<"enter the character";
+cin>>c2;
+cout<<"enter the float";
+cin>>f3;
+cout<<i1<<c2<<f3;
+}
+};
+int main()
+{
+   Data d1;
+d1.display();
+}
+=====================================================================================================
+5ans)INCREMENT OF GIVEN NUMBER BY 1
+#include<iostream>
+using namespace std;
+class Increment
+{
+public:
+int num1;
+void inc()
+{
+cout<<"enter a number : \n";
+cin>>num1;
+cout<<"after incrementation the number is:"<<num1+1;
+}
+};
+int main()
+{Increment i1;
+i1.inc();
+}
+=============================================================================================================
+6ans)INCREMENT OF GIVEN NUMBER BY 7#include<iostream>
+using namespace std;
+class Increment
+{
+public:
+int num1;
+void inc()
+{
+cout<<"enter a number : \n";
+cin>>num1;
+cout<<"after incrementation the number is:"<<num1+7;
+}
+};
+int main()
+{Increment i1;
+i1.inc();
+}
+=====================================================================================================================
+7ans)ADDITION OF 2 NUMBERS
+#include<iostream>
+using namespace std;
+class Addition
+{
+public:
+int num1,num2,result;
+void  add()
+{
+cout<<"enter the first number";
+cin>>num1;
+cout<<"enter the second number";
+cin>>num2;
+result=num1+num2;
+cout<<"the result is:"<<result;
+}
+};
+int main()
+{
+Addition a1;
+a1.add();
+}
+===========================================================================================================================
+8ans)MULTIPLICATION OF 3 NUMBERS
+#include<iostream>
+using namespace std;
+class Multiplication
+{
+public:
+int num1,num2,num3,result;
+void mul()
+{
+cout<<"enter the first number";
+cin>>num1;
+cout<<"enter the second number";
+cin>>num2;
+cout<<"enter the third numer";
+cin>>num3;
+result=num1*num2*num3;
+cout<<"the result is :"<<result;
+
+}
+};
+int main()
+{
+Multiplication m1;
+m1.mul();
+}
+=============================================================================================================================
+9ans)COMPUTE QUOTIENT AND REMAINDER
+#include<iostream>
+using namespace std;
+int main()
+{
+int divisor,divident,quotient,remainder;
+cout<<"enter  divident : \n";
+cin>>divident;
+cout<<"enter divisor : \n" ;
+cin>>divisor;
+quotient=divident/divisor;
+remainder=divident%divisor;
+cout<<"quotient=:"<<quotient;
+cout<<"remainder=:"<<remainder;
+return 0;
+}
+====================================================================================================================================
+10ans)MULTIPLY 2 FLOATING POINT NUMBERS
+#include <iostream>
+using namespace std;
+class Multiplication
+{
+public:
+float num1,num2,result;
+void mul()
+{
+cout<<"enter first number";
+cin>>num1;
+cout<<"enter second number";
+cin>>num2;
+result=num1*num2;
+cout<<"the result is:"<<result;
+}
+};
+int main()
+{
+Multiplication m1;
+m1.mul();
+}
+=======================================================================================================================================
+11ans)AREA OF SQUARE
+#include<iostream>
+using namespace std;
+int main()
+{
+int square_area,square_side;
+cout<<"enter square_side: \n";
+cin>>square_side;
+square_area=square_side*square_side;
+cout<<"square_area is :"<<square_area;
+return 0;
+}
+===========================================================================================================================================
+12ans)PERIMETER AND AREA OF RECTANGLE
+#include<iostream>
+using namespace std;
+class CalculateArea
+
+{
+public:
+double length,breadth,area,perimeter;
+
+void AreaPerimeter()
+{
+cout<<"enter the length of the rectangle";
+cin>>length;
+cout<<"3enter the breadth of the rectangle";
+cin>>breadth;
+area=length*breadth;
+perimeter=2.0*(length*breadth);
+cout<<"area of the rectangle is:"<<area<<'\n';
+cout<<"perimeter of the rectangle is:"<<perimeter;
+}
+};
+int main()
+{
+CalculateArea c1;
+c1.AreaPerimeter();
+}
+=======================================================================================================================================================
+13ans)AREA OF CIRCLE
+#include<iostream>
+using namespace std;
+int main()
+{
+float r,area;
+cout<<"enter radius:" ;
+cin>>r;
+area=3.14*r*r;
+cout<<"area is:"<<area;
+return 0;
+}
+============================================================================================================================================================
+14ans)SIMPLE INTEREST
+#include<iostream>
+using namespace std;
+class SimpleInterest
+{
+public:
+double rate,principle,time,si;
+
+void interest()
+{
+cout<<"enter the principle";
+cin>>principle;
+cout<<"enter the time";
+cin>>time;
+cout<<"enter the rate";
+cin>>rate;
+si=(principle*time*rate)/100;
+cout<<"the simple interest is:"<<si;}
+};
+int main()
+{
+SimpleInterest i1;
+i1.interest();
+}
+====================================================================================================================================================================
+15ans)AVERAGE OF FIVE NUMBERS
+#include<iostream>
+using namespace std;
+int main(){
+int num1,num2,num3,num4,num5,avg;
+cout<<"enter first num1: \n";
+cin>>num1;
+cout<<"enter num2: \n";
+cin>>num2;
+cout<<"enter num3: \n";
+cin>>num3;
+cout<<"enter num4: \n";
+cin>>num4;
+cout<<"enter num5: \n";
+cin>>num5;
+avg=(num1+num2+num3+num4+num5)/5;
+cout<<"avg of these numbers is:"<<avg;
+return 0;
+}
+========================================================================================================================================================================
+16ans)SIZE OF DATA TYPE IN C
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"size of char:"<<sizeof(char)<<"byte"<<endl;
+cout<<"size of int:"<<sizeof(int)<<"bytes"<<endl;
+cout<<"size of float:"<<sizeof(float)<<"bytes"<<endl;
+cout<<"size of double:"<<sizeof(double)<<"bytes"<<endl;
+return 0;
+}
+=====================================================================================================================================================================
+17ANS)
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    cout<<"I:\t: LIKE: \n";
+    cout<<'\t'<<"c++"<<'\t'<<"PROGRAMMING";
+}
+=============================================================================================================================
+============================================================
